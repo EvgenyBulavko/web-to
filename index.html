@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Information</title>
+</head>
+<body>
+    <!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+<!--  If necessary, please modify the charset parameter to specify the        -->
+<!--  character set of your HTML page.                                        -->
+<!--  ----------------------------------------------------------------------  -->
+
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+    <!--  ----------------------------------------------------------------------  -->
+    <!--  NOTE: Please add the following <FORM> element to your page.             -->
+    <!--  ----------------------------------------------------------------------  -->
+    
+   
+
+    <div class="wrapper">
+        <main>
+          <section class="form">
+            
+            <div class="layout-2">
+              
+             
+              <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" class="form-q">
+    
+                <input type=hidden name="oid" value="00D5g000005Hfx2">
+                <input type=hidden name="retURL" value="sen.html">
+                
+                <!--  ----------------------------------------------------------------------  -->
+                <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+                <!--  these lines if you wish to test in debug mode.                          -->
+                <!--  <input type="hidden" name="debug" value=1>                              -->
+                <!--  <input type="hidden" name="debugEmail" value="sterbennn3@gmail.com">    -->
+                <!--  ----------------------------------------------------------------------  -->
+                <div class="glass_message " id="customer_information">
+
+                  <h1>Customer Information</h1>
+
+                <label for="company">Company name *</label><input class="field_form"  id="company" maxlength="40" name="company" size="20" type="text" required/><br>
+                
+                <label for="url">Company site</label><input class="field_form"  id="url" maxlength="80" name="url" size="20" type="url" /><br>
+
+                <label for="first_name">First Name *</label><input class="field_form" id="first_name" maxlength="40" name="first_name" size="20" type="text" required/><br>
+                
+                <label for="last_name">Last Name *</label><input class="field_form" id="last_name" maxlength="80" name="last_name" size="20" type="text" required/><br>
+                
+                <label for="birthdate">Birthdate *</label><span class="dateInput dateOnlyInput  "><input class="field_form date_style"  placeholder="dd/mm/yyyy" pattern="\d{1,2}/\d{1,2}/\d{4}" id="00N5g00000CwiIy" name="00N5g00000CwiIy" size="12" type="text" required/></span><br>
+
+                <label for="email">Email *</label><input class="field_form" id="email" maxlength="80" name="email" size="20" type="email" required/><br>
+                
+               
+                <input class="field_form f-submit" type="button" id="next_address" name="next" value="Next" style="margin-left: auto;">
+                </div>
+                
+                <div class="glass_message black_fon" id="address_information">
+
+                    <h1>Address Information</h1>
+
+                    <label for="country">Billing Country *</label><input class="field_form"  id="country" maxlength="40" name="country" size="20" type="text" required/><br>
+
+                    <label for="state">Billing State / Province *</label><input class="field_form"  id="state" maxlength="20" name="state" size="20" type="text" required/><br>
+
+                    <label for="zip">Billing Zip / Postal Code *</label><input class="field_form"  id="zip" maxlength="20" name="zip" size="20" type="text" required/><br>
+
+                    <label for="city">Billing City *</label><input class="field_form"  id="city" maxlength="40" name="city" size="20" type="text" required/><br>
+                
+                    <label for="street">Billing Street *</label><input class="field_form" id="street"  name="street" required></input><br>
+                     
+                    <div class="shipping_address">
+                      <input class="checkbox__control" id="check" type="checkbox" /><label for="check" >  Add shipping address</label>
+                    </div>
+                    
+                    
+                    <div class="shipping" id="shipping">
+                               
+                    </div>
+                    
+
+                    <div class="button_style">
+                    <input class="field_form f-submit" type="button" id="prev_infomation" name="prev" value="Prev">
+                    <input class="field_form f-submit" type="button" id="next_check" name="next" value="Next">
+                    </div>
+                    
+                   
+                </div>
+                <div class="glass_message black_fon" id="check_information">
+                  <h1 style="margin: 0 0 50px;">Check & Submit</h1>
+                  
+                  <p id="subject_glass" lang="ru"> </p>
+                  
+                <div class="button_style">
+                <input class="field_form f-submit" type="button" id="prev_address" name="prev" value="Prev">
+                <input class="field_form f-submit" id="submit" type="submit" name="submit">
+                
+                </div>
+                </div>
+                
+             
+                
+                </form>
+                 
+                
+            </div>
+            
+
+          </section>
+        </main>
+        
+    </div>
+  
+    <script src="script.js"></script>
+</body>
+</html>
